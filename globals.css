@@ -1,0 +1,77 @@
+/* The styles you're using are great, but you should learn about CSS specificity. It's a very important concept. */
+
+
+/* 
+
+As you can see, moving the CSS out of styles and into a global CSS file has some implications.
+
+The use of tag selectors instead of classes causes these styles to apply to every element on every page where this stylesheet is imported.
+
+But not to worry. We have a solution called "CSS utility classes"!
+
+It would be more appropriate for you to create a class called "background-antiquewhite" and apply that to the <body> tag so that you can apply the class to only the places you want it.
+
+Utility classes prevent the fragility that comes from complex styling schemas. They're really powerful and they're my recommended go to for styling.
+
+*/
+
+
+/* use this class where you want the backgroud to be white */
+.background-antiquewhite {
+    background-color: antiquewhite;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+}
+
+h2 {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+table,
+th,
+td {
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+tr:hover {
+    background-color: #d6eeee;
+}
