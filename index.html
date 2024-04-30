@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<!-- you should read this article from VS code on may of the VS Code options that will make your life easier. Two of my favorite settings is format on save and auto save. -->
-<!-- https://code.visualstudio.com/docs/editor/codebasics -->
 <html>
   <head>
-    <!-- <link
+    <!-- As I know i can't place favicon into a CSS style sheet. 
+      Please, let me know if I'm wrong and actually a can do it. -->
+    <link
       rel="icon"
       type="image/x-icon"
-      href="/Users/kaanvatansever/Develop/myFirstHTML/borscht.png"
-    /> -->
-    <!-- We should move these styles into a CSS style sheet to keep our code concerns separated. This allows us to keep each file as clean and precise as possible. -->
+      href="./images/favicon.ico"
+    />
     <link rel="stylesheet" href="globals.css" />
     <meta charset="UTF-8" />
     <title>My first HMTL project</title>
   </head>
   <body>
-    <!-- The nav element represents a group of navigation elements. Inside we put an unordered list filled with a tags. This allows us to navigate our website -->
-    <nav>
-      <ul>
-        <li>
-          <a href="/index.html">home</a>
-          <a href="/recipe.html">recipes</a>
-          <a href="/table.html">table</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <img
+        src="./images/Ukrainian food.png" 
+        alt="Ukrainian food"
+      />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./recipe.html">Recipes</a></li>
+          <li><a href="./table.html">Table</a></li>
+        </ul>
+      </nav>
+    </header>
     <h1 style="text-align: center">Welcome!</h1>
-    <!-- Here I'm putting a button to show you how to use JavaScript to make something work on the page. Clicking this button will cause an alert to pop up. -->
     <button onclick="sendAlert()">Click me!</button>
-    <p>
+    <main><p>
       This is my first project and at the same time a cheat sheet for the
       future!
     </p>
@@ -45,9 +46,7 @@
     <!-- https://medium.com/nerd-for-tech/programming-case-types-explained-143cad3681e3 <- This is not a comprehensive guide!!! -->
     <h2 id="C1">HTML formatting</h2>
 
-    <!-- Here you used inline styling. It's fine that you used it while learning, but inline styles have a specificity weight of 1000. They are difficult to overcome when they cause a problem and should only be used when absolutely necessary. Inline styles are an "escape hatch" left over from the early days of the internet. -->
-    <!-- Prefer to apply CSS utility classes or global tag styles here. You would use global tag styles if you want all p tags in your project to have this style. Use utility classes if you want to be more precise. Utility classes are explained in the globals.css file. -->
-    <p style="text-align: center">
+    <p id="para1">
       In this paragraph i'm using text formatting <br />It's can be
       <b>bold</b> or <strong>strong</strong>. <br /><i>Italic</i> or
       <em>emhasized text</em>. <br />Text can be <mark>marked</mark>.<br />I can
@@ -167,10 +166,8 @@
     <br />
     <hr />
     <h2 id="C5">Image Maps</h2>
-    <!-- Here I'm going to help you understand how to import images from source files in your project. You may not have realized that when you specify your path you need to use "./". This tells the html that the file lives in the same directory as the html file. -->
-    <!-- You can even create a directory called "images" and stick all the images in it. Once they're in the images directory you can access them by specifying the path "./images/[image-name]" -->
     <img
-      src="./intro-1646862866.jpeg"
+      src="./images/intro-1646862866.jpeg"
       alt="Table with Ukrainian dishes"
       style="width: 780px; height: 438px"
       usemap="#dishesmap"
@@ -243,5 +240,6 @@
     </map>
     <hr />
     <script src="./index.js" type="text/javascript" lang="javascript"></script>
+    </main>
   </body>
 </html>
