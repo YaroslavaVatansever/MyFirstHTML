@@ -57,7 +57,7 @@ main {
 body {
     height: 125vh;
     background-image: url('./images/pexels-padrinan-19670.jpg');
-    background-size: cover;
+    background-repeat: repeat-x;
     font-family: sans-serif;
     margin-top: 80px;
     padding: 30px;
