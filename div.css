@@ -1,0 +1,38 @@
+header{
+    font-family:Courier New, monospace;
+    color: aliceblue;
+    background-color: black;
+    width: 300px;
+    margin: auto;
+}
+main {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1, h2, h3, h4{
+    text-align: center;
+}
+.text {
+    color: aliceblue;
+    background-color: rgba(245, 121, 121, 0.7)
+}
+#Odesa {
+    color: white;
+    background-color: rgba(213, 120, 246, 0.7);
+}
+#Kyiv {
+    color: white;
+    background-color: rgba(111, 233, 160, 0.7);
+}
+#Lviv {
+    color: white;
+    background-color: rgba(255, 168, 82, 0.7);
+}
+div.mycontainer {
+    display: flex;
+}
+div.mycontainer div {
+    width:33%;
+}
+ 
