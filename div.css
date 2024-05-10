@@ -12,6 +12,7 @@ main {
 }
 h1, h2, h3, h4{
     text-align: center;
+    border: dotted medium;
 }
 .text {
     color: aliceblue;
@@ -33,6 +34,6 @@ div.mycontainer {
     display: flex;
 }
 div.mycontainer div {
-    width:33%;
+    width:34%;
 }
  
