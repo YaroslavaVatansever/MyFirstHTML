@@ -121,3 +121,13 @@ div.intro img{
     width: 600px;
     height: 400px;
 }
+.notes{
+    display: flex;
+}
+.notes div{
+    width: 30%;
+    background-color: white;
+    border:dotted 5px #d6eeee;
+    border-radius: 20px;
+    padding: 10px;
+}
