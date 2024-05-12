@@ -1,0 +1,82 @@
+body{
+    background-color:white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+header{
+    box-shadow: 0 0 1 0 lightslategray;
+    position: fixed;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+.firstLine{
+    background-color: white;
+    display:flex;
+    width: 100%;
+    padding: 20px;
+    justify-content:space-around;
+}
+#logo img{
+    height: 40px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+header ol{
+    display:flex;
+    list-style: none;
+}
+header ul{
+    display:flex;
+    list-style: none;
+}
+header li{
+    margin: 10px;
+    padding: 10px;
+}
+#orderedList{
+    color: rgba(128, 128, 128, 0.7);
+    font-size: medium;
+}
+header li:hover{
+    color: black;
+    background-color:rgba(128, 128, 128, 0.5);
+    border-radius: 50px;
+}
+#homeLi{
+    color: black;
+}
+#homeLi:hover:not(.active){
+    background-color: transparent;
+}
+#languageImage{
+    height: 20px;
+}
+#menuImage{
+    height: 20px;
+}
+.secondLine{
+    font-size: small;
+    background-color: white;
+    display:flex;
+    width: 100%;
+    justify-content:center;
+}
+.secondLine div{
+    background-color: white;
+    padding: 10px;
+}
+.secondLine div:hover{
+    color: black;
+    background-color:rgba(128, 128, 128, 0.5);
+    border-radius: 50px;
+}
+#searchIcon{
+    border: none;
+}
+#searchIcon img{
+    height: 50px;
+}
