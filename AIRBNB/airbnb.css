@@ -60,13 +60,17 @@ header li:hover{
 }
 .secondLine{
     font-size: small;
-    background-color: white;
     display:flex;
-    width: 100%;
     justify-content:center;
+    max-width: fit-content;
+    /* 
+        removing unnecessary code will reduce your mental and visual fatigue and as such, i removed background color because it's unneccesary 
+        also, i modified width to max-width: content because div is a block element and will automatically fill the full width of the screen (section is also block level)
+        you set max-width to content to ensure the border fits tightly to the content inside of it
+        you would not need to use max-width if you were using inline elements as they automatically set themselves to max-width: content
+    */
 }
 .secondLine div{
-    background-color: white;
     padding: 10px;
 }
 .secondLine div:hover{
@@ -79,4 +83,20 @@ header li:hover{
 }
 #searchIcon img{
     height: 50px;
+}
+
+/*
+    you want to style the border of the parent element that wraps the nav group
+    i added this class to the parent element of the second nav group in the header
+*/
+.search-nav {
+    border: 1px solid black;
+    border-radius: 32px;
+}
+
+/* header is the parent tag to your nav elements so i added flexbox to center the content inside of it */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

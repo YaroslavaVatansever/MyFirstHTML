@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="airbnb.css" />
-        <meta charset="UTF-8" />
-        <title>UkrainStay|UA travel, vacation rentals</title>
-    </head>
-    <body>
-        <header>
-            <section class="firstLine">
-                <div id="logo">
-                    <img
-                     src="images/airbnb.png"
-                    alt="Ukrainian-airbnb-logo"
-                    />
-                    <h3><span style="color: rgb(255, 215, 0);">Ukraine</span><span style="color: rgb(0, 87, 183);">Stay</span></h3>
-                    </div>
-                <div id="orderedList">
-                    <ul>
-                        <li id="homeLi">Home</li>
-                        <li>Experiences</li>
-                        <li>Online Experiences</li>
-                    </ul>
-                </div>
-                <div id="unorderedList">
-                    <ol>
-                        <li>Your Ukrainian Sanctuary</li>
-                        <li>
-                            <img id="languageImage"
-                            src="images/language.png" 
-                            alt="change-language" 
-                            />
-                        </li>
-                        <li>
-                            <img id="menuImage"
-                            src="images/menu.png"
-                            alt="Go-to-menu"
-                            />
-                        </li>
-                    </ol>
-                </div>
-            </section>
-            <section class="secondLine">
-                <div>
-                    <h4>Where</h4>
-                    <p>Search Ukrainian Gems</p>
-                </div>
-                <div>
-                    <h4>Check in</h4>
-                    <p>Specify dates</p>
-                </div>
-                <div>
-                    <h4>Check out</h4>
-                    <p>Specify dates</p>
-                </div>
-                <div>
-                    <h4>Who</h4>
-                    <p>Include guests</p>
-                </div>
-                <div id="searchIcon">
-                    <img
-                    src="images/search-icon-design-in-blue-circle-png.webp"
-                    alt="search-icon"
-                    />
-                </div>
-            </section>
-         </header>
-            
-        
-    </body>
+  <head>
+    <link rel="stylesheet" href="airbnb.css" />
+    <meta charset="UTF-8" />
+    <title>UkrainStay|UA travel, vacation rentals</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- 
+        both of these <sections> should be <nav> elements, but <nav> is an inline element
+        wrapping a div (block) inside a nav (inline) invalidates your CSS
+        if you want to update this to nav then you should use something like <nav><span></span></nav>
+        also, h3 is a block level element as well so it should not be used in navigation elements
+        i want you to be aware that your HTML structure is poor in terms of accessibility, but it is not necessary to update at the moment
+    -->
+      <section class="firstLine">
+        <div id="logo">
+          <img src="images/airbnb.png" alt="Ukrainian-airbnb-logo" />
+          <h3>
+            <span style="color: rgb(255, 215, 0)">Ukraine</span
+            ><span style="color: rgb(0, 87, 183)">Stay</span>
+          </h3>
+        </div>
+        <div id="orderedList">
+          <ul>
+            <li id="homeLi">Home</li>
+            <li>Experiences</li>
+            <li>Online Experiences</li>
+          </ul>
+        </div>
+        <div id="unorderedList">
+          <ol>
+            <li>Your Ukrainian Sanctuary</li>
+            <li>
+              <img
+                id="languageImage"
+                src="images/language.png"
+                alt="change-language"
+              />
+            </li>
+            <li>
+              <img id="menuImage" src="images/menu.png" alt="Go-to-menu" />
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!--
+            this <section> should be a <nav>, but i'm using div so we don't have to update the entire html structure
+            i've added .search-nav class - please check airbnb.css
+        -->
+      <div class="secondLine search-nav">
+        <div>
+          <h4>Where</h4>
+          <p>Search Ukrainian Gems</p>
+        </div>
+        <div>
+          <h4>Check in</h4>
+          <p>Specify dates</p>
+        </div>
+        <div>
+          <h4>Check out</h4>
+          <p>Specify dates</p>
+        </div>
+        <div>
+          <h4>Who</h4>
+          <p>Include guests</p>
+        </div>
+        <!-- 
+            prefer to use classes instead of id's
+            id's are more useful for JavaScript than for CSS 
+            the weight of an id in CSS can make CSS fragile and easy to break
+        -->
+        <div id="searchIcon">
+          <img
+            src="images/search-icon-design-in-blue-circle-png.webp"
+            alt="search-icon"
+          />
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
