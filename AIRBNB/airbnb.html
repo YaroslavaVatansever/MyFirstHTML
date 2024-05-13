@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <!-- 
-        both of these <sections> should be <nav> elements, but <nav> is an inline element
+        both of these <section> should be <nav> elements, but <nav> is an inline element
         wrapping a div (block) inside a nav (inline) invalidates your CSS
         if you want to update this to nav then you should use something like <nav><span></span></nav>
         also, h3 is a block level element as well so it should not be used in navigation elements
@@ -49,35 +49,34 @@
             this <section> should be a <nav>, but i'm using div so we don't have to update the entire html structure
             i've added .search-nav class - please check airbnb.css
         -->
-      <div class="secondLine search-nav">
-        <div>
-          <h4>Where</h4>
-          <p>Search Ukrainian Gems</p>
-        </div>
-        <div>
-          <h4>Check in</h4>
-          <p>Specify dates</p>
-        </div>
-        <div>
-          <h4>Check out</h4>
-          <p>Specify dates</p>
-        </div>
-        <div>
-          <h4>Who</h4>
-          <p>Include guests</p>
-        </div>
-        <!-- 
-            prefer to use classes instead of id's
-            id's are more useful for JavaScript than for CSS 
-            the weight of an id in CSS can make CSS fragile and easy to break
-        -->
-        <div id="searchIcon">
+      <nav class="search-nav flex">
+        <span class="search-nav-item py-5 px-20 flex flex-col">
+          <span class="search-nav-item-label">Where</span>
+          <span>Search Ukrainian Gems</span>
+        </span>
+        <span class="divider"></span>
+        <span class="search-nav-item py-5 px-20 flex flex-col">
+          <span class="search-nav-item-label">Check in</span>
+          <span>Specify dates</span>
+        </span>
+        <span class="divider"></span>
+        <span class="search-nav-item py-5 px-20 flex flex-col">
+          <span class="search-nav-item-label">Check out</span>
+          <span>Specify dates</span>
+        </span>
+        <span class="divider"></span>
+        <span class="search-nav-item py-5 pr-5 pl-20 flex align-items-center">
+          <span class="flex flex-col">
+            <span class="search-nav-item-label">Who</span>
+            <span>Include guests</span>
+          </span>
           <img
+            class="search-icon"
             src="images/search-icon-design-in-blue-circle-png.webp"
-            alt="search-icon"
+            alt="search icon"
           />
-        </div>
-      </div>
+        </span>
+      </nav>
     </header>
   </body>
 </html>

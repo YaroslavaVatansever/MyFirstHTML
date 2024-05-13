@@ -2,6 +2,13 @@ body{
     background-color:white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 header{
     box-shadow: 0 0 1 0 lightslategray;
     position: fixed;
@@ -12,11 +19,10 @@ header{
     align-items: center;
 }
 .firstLine{
-    background-color: white;
-    display:flex;
+    display: flex;
     width: 100%;
     padding: 20px;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 #logo img{
     height: 40px;
@@ -58,45 +64,76 @@ header li:hover{
 #menuImage{
     height: 20px;
 }
-.secondLine{
-    font-size: small;
-    display:flex;
-    justify-content:center;
-    max-width: fit-content;
-    /* 
-        removing unnecessary code will reduce your mental and visual fatigue and as such, i removed background color because it's unneccesary 
-        also, i modified width to max-width: content because div is a block element and will automatically fill the full width of the screen (section is also block level)
-        you set max-width to content to ensure the border fits tightly to the content inside of it
-        you would not need to use max-width if you were using inline elements as they automatically set themselves to max-width: content
-    */
-}
-.secondLine div{
-    padding: 10px;
-}
-.secondLine div:hover{
-    color: black;
-    background-color:rgba(128, 128, 128, 0.5);
-    border-radius: 50px;
-}
-#searchIcon{
-    border: none;
-}
-#searchIcon img{
-    height: 50px;
-}
 
-/*
-    you want to style the border of the parent element that wraps the nav group
-    i added this class to the parent element of the second nav group in the header
-*/
 .search-nav {
+    font-size: x-small;
+    align-items: center;
     border: 1px solid black;
     border-radius: 32px;
 }
 
-/* header is the parent tag to your nav elements so i added flexbox to center the content inside of it */
-.header {
+.search-nav-item:hover {
+    color: black;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 32px;
+}
+
+.search-nav-item:hover ~ .divider {
+    border: none;
+}
+
+.divider:has(+ .search-nav-item:hover) {
+    border: none;
+}
+
+.divider {
+    border-right: 1px solid black;
+    height: 100%;
+}
+
+.search-nav-item:hover {
+    color: black;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 32px;
+}
+
+.search-nav-item-label {
+    padding-bottom: 5px;
+}
+
+.search-icon {
+    height: 25px;
+    margin-left: 20px
+}
+
+/* utility classes */
+
+.flex {
     display: flex;
+}
+
+.flex-col {
     flex-direction: column;
-    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pr-5 {
+    padding-right: 5px;
 }
