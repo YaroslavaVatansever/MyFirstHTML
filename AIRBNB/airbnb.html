@@ -46,37 +46,37 @@
         </div>
       </section>
       <!--
-            this <section> should be a <nav>, but i'm using div so we don't have to update the entire html structure
-            i've added .search-nav class - please check airbnb.css
+            i thought about it more. This section should not be a nav because it does not navigate. I was under the assumption that it navigates,
+            but it actually replaces the content when the user initiates a search
         -->
-      <nav class="search-nav flex">
-        <span class="search-nav-item py-5 px-20 flex flex-col">
-          <span class="search-nav-item-label">Where</span>
-          <span>Search Ukrainian Gems</span>
-        </span>
+      <div class="search flex">
+        <div class="search-item py-5 px-20 flex flex-col">
+          <span>Where</span>
+          <span class="search-item-text">Search Ukrainian Gems</span>
+        </div>
         <span class="divider"></span>
-        <span class="search-nav-item py-5 px-20 flex flex-col">
-          <span class="search-nav-item-label">Check in</span>
-          <span>Specify dates</span>
-        </span>
+        <div class="search-item py-5 px-20 flex flex-col">
+          <span>Check in</span>
+          <span class="search-item-text">Specify dates</span>
+        </div>
         <span class="divider"></span>
-        <span class="search-nav-item py-5 px-20 flex flex-col">
-          <span class="search-nav-item-label">Check out</span>
-          <span>Specify dates</span>
-        </span>
+        <div class="search-item py-5 px-20 flex flex-col">
+          <span>Check out</span>
+          <span class="search-item-text">Specify dates</span>
+        </div>
         <span class="divider"></span>
-        <span class="search-nav-item py-5 pr-5 pl-20 flex align-items-center">
+        <div class="search-item py-5 pr-5 pl-20 flex align-items-center">
           <span class="flex flex-col">
-            <span class="search-nav-item-label">Who</span>
-            <span>Include guests</span>
+            <span>Who</span>
+            <span class="search-item-text">Include guests</span>
           </span>
           <img
             class="search-icon"
             src="images/search-icon-design-in-blue-circle-png.webp"
             alt="search icon"
           />
-        </span>
-      </nav>
+        </div>
+      </div>
     </header>
   </body>
 </html>

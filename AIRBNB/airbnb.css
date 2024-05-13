@@ -65,40 +65,37 @@ header li:hover{
     height: 20px;
 }
 
-.search-nav {
+.search {
     font-size: x-small;
     align-items: center;
     border: 1px solid black;
     border-radius: 32px;
 }
 
-.search-nav-item:hover {
-    color: black;
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 32px;
+.search-item:hover + .divider {
+    border: none;
+    margin-right: 0.5px;
 }
 
-.search-nav-item:hover ~ .divider {
+.divider:has(+ .search-item:hover) {
     border: none;
-}
-
-.divider:has(+ .search-nav-item:hover) {
-    border: none;
+    margin-left: 0.5px;
 }
 
 .divider {
-    border-right: 1px solid black;
-    height: 100%;
+    border-right: 1px solid lightgray;
+    height: 65%;
 }
 
-.search-nav-item:hover {
-    color: black;
-    background-color: rgba(128, 128, 128, 0.5);
+.search-item:hover {
+    background-color: gainsboro;
     border-radius: 32px;
 }
 
-.search-nav-item-label {
-    padding-bottom: 5px;
+.search-item-text {
+    padding-top: 5px;
+    color: gray;
+    font-weight: lighter;
 }
 
 .search-icon {
