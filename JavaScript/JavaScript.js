@@ -29,8 +29,8 @@ console.log(selectColor.length); //will show in console how many elements in arr
 function greet(name,lastName){
     console.log('Hello ' + name + ' ' + lastName)
 }
-
 greet('Kaan', 'Vatansever');
+greet('Yara', 'Semyda');
 
 // calculating a value
 function square(number){
