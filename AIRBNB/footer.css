@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    color: black;
+    font-size: x-small;
+    padding: 10px;
+    flex: 1;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer li {
+    padding: 0px 5px;
+    font-size: small;
+}
+
+.footer li:hover {
+    text-decoration: underline;
+}
