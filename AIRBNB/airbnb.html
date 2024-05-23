@@ -7,13 +7,6 @@
   </head>
   <body>
     <header class="header">
-      <!-- 
-        both of these <section> should be <nav> elements, but <nav> is an inline element
-        wrapping a div (block) inside a nav (inline) invalidates your CSS
-        if you want to update this to nav then you should use something like <nav><span></span></nav>
-        also, h3 is a block level element as well so it should not be used in navigation elements
-        i want you to be aware that your HTML structure is poor in terms of accessibility, but it is not necessary to update at the moment
-    -->
       <section class="firstLine">
         <div id="logo">
           <img src="images/airbnb.png" alt="Ukrainian-airbnb-logo" />
@@ -22,14 +15,14 @@
             ><span style="color: rgb(0, 87, 183)">Stay</span>
           </h3>
         </div>
-        <div id="orderedList">
+        <div id="unorderedList">
           <ul>
             <li id="homeLi">Home</li>
             <li>Experiences</li>
             <li>Online Experiences</li>
           </ul>
         </div>
-        <div id="unorderedList">
+        <div id="orderedList">
           <ol>
             <li>Your Ukrainian Sanctuary</li>
             <li>
@@ -45,10 +38,7 @@
           </ol>
         </div>
       </section>
-      <!--
-            i thought about it more. This section should not be a nav because it does not navigate. I was under the assumption that it navigates,
-            but it actually replaces the content when the user initiates a search
-        -->
+
       <div class="search flex">
         <div class="search-item py-5 px-20 flex flex-col">
           <span>Where</span>
@@ -73,60 +63,114 @@
           <img
             class="search-icon"
             src="images/search-icon-design-in-blue-circle-png.webp"
-                    alt="search-icon"
-                    />
-                  </div>
-              </div>
-            </header>
+            alt="search-icon"
+            />
+          </div>
+        </div>
+      </header>
       <nav class="second-bar">
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/ticket.png" alt="ticket"></span>
+          <span class="icons-images"><img src="images/ticket.png" alt="ticket"></span>
           <span class="icons-text">Icons</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/vacations.png" alt="beach"></span>
+          <span class="icons-images"><img src="images/beach.png" alt="beach"></span>
           <span class="icons-text">Beach</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/view-from-the-window.png" alt="view-from-the-window"></span>
+          <span class="icons-images"><img src="images/view-from-the-window.png" alt="view-from-the-window"></span>
           <span class="icons-text">View</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/cabin.png" alt="cabin"></span>
+          <span class="icons-images"><img src="images/cabin.png" alt="cabin"></span>
           <span class="icons-text">Cabins</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/castle.png" alt="castle"></span>
+          <span class="icons-images"><img src="images/castle.png" alt="castle"></span>
           <span class="icons-text">Castle</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/container.png" alt="container"></span>
+          <span class="icons-images"><img src="images/container.png" alt="container"></span>
           <span class="icons-text">Containers</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/pool.png" alt="pool"></span>
+          <span class="icons-images"><img src="images/pool.png" alt="pool"></span>
           <span class="icons-text">Pools</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/lake.png" alt="lake"></span>
+          <span class="icons-images"><img src="images/lake.png" alt="lake"></span>
           <span class="icons-text">Lakefront</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/national-park.png" alt="park"></span>
+          <span class="icons-images"><img src="images/national-park.png" alt="park"></span>
           <span class="icons-text">Parks</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/treehouse.png" alt="treehouse"></span>
+          <span class="icons-images"><img src="images/treehouse.png" alt="treehouse"></span>
           <span class="icons-text">Treehouses</span>
         </div>
         <div class="icons-flex">
-          <span class="icons-images"><img src="/images/tiny-house.png" alt="small house"></span>
+          <span class="icons-images"><img src="images/tiny-house.png" alt="small house"></span>
           <span class="icons-text">Tiny</span>
         </div>
       <div class="icons-flex">
-        <span class="icons-images"><img src="/images/tent.png" alt="tent"></span>
+        <span class="icons-images"><img src="images/tent.png" alt="tent"></span>
         <span class="icons-text">Camping</span>
       </div>
     </nav>
+    <!-- Here should be the main part of webpaige with pictures, but curently it looks too dificult to me, want to do it last-->
+    <section class="categories">
+      <h3>Ideas for upcoming vacations</h3>
+      <ul>
+        <li class="elect">Popular</span></li>
+        <li>Cultural getaways</li>
+        <li>Nature escapes</li>
+        <li>Mountain retreats</li>
+        <li>Oceanfront</li>
+        <li>Quirky lodging</li>
+        <li>Categories</li>
+        <li>Fun activities</li>
+        <li>Handy travel hacks</li>
+        <li>Airbnb-friendly apartments</li>
+      </ul>
+    </section>
+    <footer>
+      <ul>
+        <li class="elect">© 2024 Airbnb, Inc.</li>
+        <li>Terms</li>
+        <li>Sitemap</li>
+        <li>Privacy</li>
+        <li>Your Privacy Choices</li>
+      </ul>
+      <ul>
+        <li>
+          <img src="images/languages.png" 
+          alt="translate language"
+          />
+          English (US)
+        </li>
+        <li>
+          <img src="images/dollar.png"
+          alt="dollar"
+          />
+          USD
+        </li>
+        <li>
+          <img src="images/facebook.png"
+          alt="facebook logo"
+          />
+        </li>
+        <li>
+          <img src="images/twitter.png"
+          alt="twitter logo"
+          />
+        </li>
+        <li>
+          <img src="images/instagram.png"
+          alt="instagram logo"
+          />
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -163,6 +163,56 @@ nav{
 }
 
 .icons-flex:hover {
-   text-decoration: underline;
-   color:lightslategray
+   color:lightslategray;
+   border-bottom: 2px solid lightslategray;
+}
+
+/* Categories for inspiration */
+.categories{
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.categories ul {
+    color: lightslategray;
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid lightslategrey;
+}
+
+.categories li {
+    font-size: small;
+    padding: 20px;
+}
+
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+} 
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer img {
+    height: 20px;
+}
+
+footer li {
+    padding: 10px;
+    font-size: small;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+.elect {
+    color: black;
+}
+
+.elect:hover {
+    text-decoration: none;
 }
