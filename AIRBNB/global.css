@@ -75,6 +75,14 @@ ul {
     font-size: x-small;
 }
 
+.font-m {
+    font-size: medium;
+}
+
+.font-l {
+    font-size: large;
+}
+
 .font-yellow {
     color: rgb(255, 215, 0)
 }
@@ -84,10 +92,16 @@ ul {
 }
 
 .font-gray {
-    color: lightslategray
+    color: gray;
 }
 
+.font-black {
+    color: black;
+}
 /* icon */
+.icon-m {
+    height: 25px;
+}
 .icon-sm {
     height: 20px;
     width: 20px;
@@ -95,4 +109,12 @@ ul {
 
 .icon-xs {
     height: 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid lightslategray;;
+}
+
+.border-top {
+    border-top: 1px solid lightslategray;
 }

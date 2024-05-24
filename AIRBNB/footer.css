@@ -1,29 +1,81 @@
+/* Footer */
 .footer {
     display: flex;
     flex-direction: column;
     background-color: #f7f7f7;
-    color: black;
-    font-size: x-small;
-    padding: 10px;
+    color: lightslategray;
+    font-size: small;
+    padding: 15px;
     flex: 1;
 }
 
+/* Footer Navigation */
 .footer-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-.footer ul {
+.footer-nav ul,
+.footer-categories ul {
     display: flex;
     list-style: none;
 }
 
-.footer li {
-    padding: 0px 5px;
-    font-size: small;
+.footer-nav li,
+.footer-categories li {
+    padding: 0 10px;
 }
 
-.footer li:hover {
+.footer-nav li:hover,
+.footer-categories li:hover,
+.support-section li:hover {
+    color: black;
     text-decoration: underline;
+}
+
+/* Footer City Listings */
+.cities {
+    width: 100%;
+    padding: 20px;
+}
+
+.cities-list {
+    columns: 5;
+    list-style: none;
+    margin: 5px;
+}
+
+.cities-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Support Section */
+.support-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    padding: 5px;
+    text-align: left;
+}
+
+.column h2 {
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.column li {
+    text-align: left;
+    padding: 5px;
 }
