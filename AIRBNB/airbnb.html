@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="airbnb.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="footer.css" />
     <meta charset="UTF-8" />
-    <title>UkrainStay|UA travel, vacation rentals</title>
+    <title>UkraineStay|UA travel, vacation rentals</title>
   </head>
-  <body>
-    <header class="header">
-      <section class="firstLine">
-        <div id="logo">
-          <img src="images/airbnb.png" alt="Ukrainian-airbnb-logo" />
-          <h3>
-            <span style="color: rgb(255, 215, 0)">Ukraine</span
-            ><span style="color: rgb(0, 87, 183)">Stay</span>
-          </h3>
-        </div>
-        <div id="unorderedList">
-          <ul>
-            <li id="homeLi">Home</li>
-            <li>Experiences</li>
-            <li>Online Experiences</li>
-          </ul>
-        </div>
-        <div id="orderedList">
-          <ol>
-            <li>Your Ukrainian Sanctuary</li>
-            <li>
-              <img
-                id="languageImage"
-                src="images/language.png"
-                alt="change-language"
-              />
-            </li>
-            <li>
-              <img id="menuImage" src="images/menu.png" alt="Go-to-menu" />
-            </li>
-          </ol>
-        </div>
-      </section>
 
-      <div class="search flex">
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- header nav -->
+      <nav
+        aria-label="use to navigate from site header"
+        class="header-nav pt-5"
+      >
+        <div class="logo-container pl-5">
+          <img
+            class="icon-sm"
+            src="images/airbnb.png"
+            alt="Ukrainian-airbnb-logo"
+          />
+          <span class="font-sm font-yellow">Ukraine</span>
+          <span class="font-sm font-blue">Stay</span>
+        </div>
+        <ul class="header-nav-links flex">
+          <li class="px-10"><span class="font-sm">Home</span></li>
+          <li class="px-10"><span class="font-sm">Experiences</span></li>
+          <li class="px-10"><span class="font-sm">Online Experiences</span></li>
+        </ul>
+        <ul class="controls flex">
+          <li class="pl-5">
+            <span class="font-xs">Your Ukrainian Sanctuary</span>
+          </li>
+          <li class="pl-5">
+            <img
+              class="icon-sm"
+              src="images/language.png"
+              alt="change-language"
+            />
+          </li>
+          <li class="pl-5">
+            <img class="icon-sm" src="images/menu.png" alt="Go-to-menu" />
+          </li>
+        </ul>
+      </nav>
+      <!-- header search -->
+      <div class="search flex p-5">
         <div class="search-item py-5 px-20 flex flex-col">
           <span>Where</span>
           <span class="search-item-text">Search Ukrainian Gems</span>
@@ -64,113 +73,236 @@
             class="search-icon"
             src="images/search-icon-design-in-blue-circle-png.webp"
             alt="search-icon"
-            />
-          </div>
+          />
         </div>
-      </header>
-      <nav class="second-bar">
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/ticket.png" alt="ticket"></span>
-          <span class="icons-text">Icons</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/beach.png" alt="beach"></span>
-          <span class="icons-text">Beach</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/view-from-the-window.png" alt="view-from-the-window"></span>
-          <span class="icons-text">View</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/cabin.png" alt="cabin"></span>
-          <span class="icons-text">Cabins</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/castle.png" alt="castle"></span>
-          <span class="icons-text">Castle</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/container.png" alt="container"></span>
-          <span class="icons-text">Containers</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/pool.png" alt="pool"></span>
-          <span class="icons-text">Pools</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/lake.png" alt="lake"></span>
-          <span class="icons-text">Lakefront</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/national-park.png" alt="park"></span>
-          <span class="icons-text">Parks</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/treehouse.png" alt="treehouse"></span>
-          <span class="icons-text">Treehouses</span>
-        </div>
-        <div class="icons-flex">
-          <span class="icons-images"><img src="images/tiny-house.png" alt="small house"></span>
-          <span class="icons-text">Tiny</span>
-        </div>
-      <div class="icons-flex">
-        <span class="icons-images"><img src="images/tent.png" alt="tent"></span>
-        <span class="icons-text">Camping</span>
       </div>
-    </nav>
-    <!-- Here should be the main part of webpaige with pictures, but curently it looks too dificult to me, want to do it last-->
+      <!-- category nav -->
+      <nav
+        aria-label="use to navigate the pages main content"
+        class="categories-nav"
+      >
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/ticket.png" alt="ticket" />
+          <span class="font-xs font-gray">Icons</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/beach.png" alt="beach" />
+          <span class="font-xs font-gray">Beach</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/view-from-the-window.png" />
+          <span class="font-xs font-gray">View</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/cabin.png" alt="cabin" />
+          <span class="font-xs font-gray">Cabins</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/castle.png" alt="castle" />
+          <span class="font-xs font-gray">Castle</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img
+            class="icon-sm pb-5"
+            src="images/container.png"
+            alt="container"
+          />
+          <span class="font-xs font-gray">Containers</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/pool.png" alt="pool" />
+          <span class="font-xs font-gray">Pools</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/lake.png" alt="lake" />
+          <span class="font-xs font-gray">Lakefront</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/national-park.png" alt="park" />
+          <span class="font-xs font-gray">Parks</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img
+            class="icon-sm pb-5"
+            src="images/treehouse.png"
+            alt="treehouse"
+          />
+          <span class="font-xs font-gray">Treehouses</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img
+            class="icon-sm pb-5"
+            src="images/tiny-house.png"
+            alt="small house"
+          />
+          <span class="font-xs font-gray">Tiny</span>
+        </div>
+        <div class="flex category-nav-item">
+          <img class="icon-sm pb-5" src="images/tent.png" alt="tent" />
+          <span class="font-xs font-gray">Camping</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- content -->
     <section class="categories">
-      <h3>Ideas for upcoming vacations</h3>
-      <ul>
-        <li class="elect">Popular</span></li>
-        <li>Cultural getaways</li>
-        <li>Nature escapes</li>
-        <li>Mountain retreats</li>
-        <li>Oceanfront</li>
-        <li>Quirky lodging</li>
-        <li>Categories</li>
-        <li>Fun activities</li>
-        <li>Handy travel hacks</li>
-        <li>Airbnb-friendly apartments</li>
-      </ul>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
+      <div>hi</div>
     </section>
-    <footer>
-      <ul>
-        <li class="elect">© 2024 Airbnb, Inc.</li>
-        <li>Terms</li>
-        <li>Sitemap</li>
-        <li>Privacy</li>
-        <li>Your Privacy Choices</li>
-      </ul>
-      <ul>
-        <li>
-          <img src="images/languages.png" 
-          alt="translate language"
-          />
-          English (US)
-        </li>
-        <li>
-          <img src="images/dollar.png"
-          alt="dollar"
-          />
-          USD
-        </li>
-        <li>
-          <img src="images/facebook.png"
-          alt="facebook logo"
-          />
-        </li>
-        <li>
-          <img src="images/twitter.png"
-          alt="twitter logo"
-          />
-        </li>
-        <li>
-          <img src="images/instagram.png"
-          alt="instagram logo"
-          />
-        </li>
-      </ul>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div>
+        <h3>Ideas for upcoming vacations</h3>
+        <ul>
+          <li><span class="font-xs">Popular</span></li>
+          <li><span class="font-xs">Cultural getaways</span></li>
+          <li><span class="font-xs">Nature getaways</span></li>
+          <li><span class="font-xs">Mountain retreats</span></li>
+          <li><span class="font-xs">Oceanfront</span></li>
+          <li><span class="font-xs">Quirky lodging</span></li>
+          <li><span class="font-xs">Categories</span></li>
+          <li><span class="font-xs">Fun activities</span></li>
+          <li><span class="font-xs">Handy travel hacks</span></li>
+          <li><span class="font-xs">Airbnb-friendly apartments</span></li>
+        </ul>
+      </div>
+      <nav aria-label="use to navigate from site footer" class="footer-nav">
+        <div class="flex align-items-center">
+          <span>© 2024 Airbnb, Inc.</span>
+          <ul>
+            <li><span class="font-xs">Terms</span></li>
+            <li><span class="font-xs">Sitemap</span></li>
+            <li><span class="font-xs">Privacy</span></li>
+            <li><span class="font-xs">Your Privacy Choices</span></li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <img
+              class="icon-xs"
+              src="images/languages.png"
+              alt="translate language"
+            />
+            <span class="font-xs">English (US)</span>
+          </li>
+          <li>
+            <img class="icon-xs" src="images/dollar.png" alt="dollar" />
+            <span class="font-xs">USD</span>
+          </li>
+          <li>
+            <img
+              class="icon-xs"
+              src="images/facebook.png"
+              alt="facebook logo"
+            />
+          </li>
+          <li>
+            <img class="icon-xs" src="images/twitter.png" alt="twitter logo" />
+          </li>
+          <li>
+            <img
+              class="icon-xs"
+              src="images/instagram.png"
+              alt="instagram logo"
+            />
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

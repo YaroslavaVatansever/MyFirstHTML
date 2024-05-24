@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0px;
+}
+
+/* chrome default stylesheet overrides */
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+/* layout */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* padding */
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.px-10 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pt-5 {
+    padding-top: 5px;
+}
+
+.px-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pb-5 {
+    padding-bottom: 5px;
+}
+
+/* font */
+.font-sm {
+    font-size: small
+}
+
+.font-xs {
+    font-size: x-small;
+}
+
+.font-yellow {
+    color: rgb(255, 215, 0)
+}
+
+.font-blue {
+    color: rgb(0, 87, 183)
+}
+
+.font-gray {
+    color: lightslategray
+}
+
+/* icon */
+.icon-sm {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-xs {
+    height: 10px;
+}
