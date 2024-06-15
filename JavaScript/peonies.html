@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Show Different Images Depending on Browser Width</h1>
+    <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+    <picture>
+        <source srcset="Peony-paint.jpeg" media="(max-width: 600px)" />
+        <source srcset="Peony-Flowers.webp" media="(max-width:1500px)" />
+        <source srcset="Peony-Flowers.webp" />
+        <img src="Peony-Flowers.webp" alt="peony" style="width:auto;" />
+    </picture>
+</body>
+</html>
