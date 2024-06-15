@@ -1,34 +1,28 @@
-
-.background-antiquewhite {
-    background-color: antiquewhite;
-}
 body {
     height: 125vh;
-    background-image: url('./images/pexels-padrinan-19670.jpg');
-    background-repeat: repeat-x;
-    font-family: sans-serif;
-    margin-top: 80px;
+    background-image: url('./images/pexels-padrinan-19670.png');
+    font-family: Copperplate, Papyrus, fantasy;
     padding: 30px;
 }
-header img {
-    height: 80px;
-}
 
+/* Header Styles */
 header {
     background-color: white;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 80px;
     display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 25px 0 black;
 }
 
-header li{
+header img {
+    height: 80px;
+}
+
+header li {
     margin: 30px;
 }
 
@@ -36,97 +30,94 @@ header li a {
     color: black;
     text-decoration: none;
 }
+
 header li a:hover {
-    color:teal;
+    color: black;
     border-bottom: solid;
 }
-nav ul{
+
+/* Navigation */
+nav ul {
     list-style: none;
     padding-left: 0;
     display: flex;
 }
+
+/* Main Content*/
 main {
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
-main h1, h2 {
+main h1,
+main h2 {
     font-size: 200%;
     text-align: center;
 }
 
-main a:link {
-    color: blueviolet;
+main a:link,
+main a:visited {
+    color: white;
     background-color: transparent;
     text-decoration: none;
-}
-
-main a:visited {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
 }
 
 main a:hover {
-    color: navy;
-    background-color: transparent;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
 }
 
-#para1 {
-    text-align: center
-}
-
-table,
-th,
-td {
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    padding: 15px;
-}
-
-tr:hover {
-    background-color: #d6eeee;
-}
-
+/* Section Styles */
 section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-section h3{
+
+section h3 {
     text-align: center;
 }
-#directions{
+
+/* Specific ID and Class Styles */
+#para1 {
+    text-align: center;
+}
+
+#directions {
     width: 70%;
 }
+
 #ingredients {
     background-color: white;
-    border: dotted 5px #d6eeee ;
+    border: dotted 5px gray;
     border-radius: 20px;
     padding: 10px;
 }
-#ingredients p{
+
+#ingredients p {
     text-decoration: underline;
 }
-div.intro{
+
+div.intro {
     display: flex;
 }
-div.intro div{
+
+div.intro div {
     width: 50%;
 }
-div.intro img{
+
+div.intro img {
     width: 600px;
     height: 400px;
 }
-.notes{
+
+.notes {
     display: flex;
 }
-.notes div{
+
+.notes div {
     width: 30%;
     background-color: white;
-    border:dotted 5px #d6eeee;
+    border: dotted 5px gray;
     border-radius: 20px;
     padding: 10px;
 }
