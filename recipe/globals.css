@@ -10,12 +10,14 @@ header {
     background-color: white;
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 0 25px 0 black;
+    box-shadow: 0 0 20px 0 black;
 }
 
 header img {
@@ -54,15 +56,15 @@ main h2 {
     text-align: center;
 }
 
-a:link,
-a:visited {
-    color: white;
+main a:link,
+main a:visited {
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover {
-    color: black;
+main a:hover {
+    color: gray;
     text-decoration: underline;
 }
 
