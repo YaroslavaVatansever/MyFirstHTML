@@ -55,6 +55,25 @@ let resultA = numberY.toExponential(2); //9.66e+0
 let resultB = numberY.toExponential(4); //9.6560e+0
 let resultC = numberY.toExponential(6); //9.656000e+0
 
-console.log(resultA, resultB, resultC);
+console.log(resultA, resultB, resultC); 
 console.log(typeof(resultA)); // string
 
+
+let a = 2.664575;
+console.log(a.toFixed(0));
+console.log(a.toPrecision(2));
+console.log(a.valueOf());
+console.log(Number.isInteger(a));
+//The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
+//There is no reason to use it in your code.
+
+
+console.log(Number(true));
+console.log(Number("    10    "));
+console.log(parseInt("24.33"));
+console.log(parseFloat("24.33"));
+console.log(Number.parseFloat("years 10"));
+console.log(Number.parseInt("10 20 30"));
+
+let b = Number.EPSILON;
+console.log(b);
