@@ -1,0 +1,16 @@
+body {
+    font-family: "Sofia", sans-serif;
+}
+header img {
+    height: 300px ;
+    float: right;
+}
+header p {
+    font-size: larger;
+}
+h1 {
+    text-align: center;
+}
+main {
+    text-align: center;
+}
