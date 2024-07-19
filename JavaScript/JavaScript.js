@@ -1,11 +1,11 @@
-// //This is my first JavaScript code!
-// alert("Welcome to my first JavaScript project!✨");
+//This is my first JavaScript code!
+alert("Welcome to my first JavaScript project!✨");
 
-// function myFunction() {
-//     document.getElementById('demo').innerHTML = "My first JavaScript";
-// } 
+function myFunction() {
+    document.getElementById('demo').innerHTML = "My first JavaScript";
+} 
 
-// console.log('Hello world!')
+console.log('Hello world!')
 
 // let person = {  //object
 //     firstName: 'Yaroslava', // String Literal
@@ -13,7 +13,6 @@
 //     middleName: null,
 //     age: 23,  // Number Literal
 //     isMarried: true // Boolean Literal
-
 // }
 // person.age = 24;
 // console.log(person);
@@ -47,68 +46,71 @@
 
 
 // IF STATMENTS AND OPERATORS
-const cash = 100;
-const costOfItem = 123;
-const hasCreditCard = true;
-const hasNotReachedCreditLimit = true;
+// const cash = 100;
+// const costOfItem = 123;
+// const hasCreditCard = true;
+// const hasNotReachedCreditLimit = true;
 
-if (cash >= costOfItem) {
-    console.log("You can pay with cash!");
-} else if(hasCreditCard && hasNotReachedCreditLimit){
-    console.log("You can pay with credit card!");
-} else {
-    console.log("Sorry, you can not purchase this item.");
-}
-
-
-// //Function
-// function sayHi(name, lastName){
-//     console.log("Hi " + name + " " + lastName);
+// if (cash >= costOfItem) {
+//     console.log("You can pay with cash!");
+// } else if(hasCreditCard && hasNotReachedCreditLimit){
+//     console.log("You can pay with credit card!");
+// } else {
+//     console.log("Sorry, you can not purchase this item.");
 // }
 
-// sayHi("Yara", "Semyda");
-// sayHi("Kaan", "Vatansever");
+
+// // //Function
+// // function sayHi(name, lastName){
+// //     console.log("Hi " + name + " " + lastName);
+// // }
+
+// // sayHi("Yara", "Semyda");
+// // sayHi("Kaan", "Vatansever");
 
 
-//Nested Function
-function numberDoubler(num) {
-    const doubledValue = num * 2;
-    return doubledValue;
-}
+// //Nested Function
+// function numberDoubler(num) {
+//     const doubledValue = num * 2;
+//     return doubledValue;
+// }
 
 
 
-const numSixDoubled = numberDoubler(6);
-console.log(numSixDoubled);
+// const numSixDoubled = numberDoubler(6);
+// console.log(numSixDoubled);
 
-function squareAndMultiply(num1, num2) {
-    function squarer(x) {
-        return x * x;
-    } function multiplyBy10(y) {
-        return y * 10;
-    }
-    return squarer(num1) * multiplyBy10(num2);
-}
+// function squareAndMultiply(num1, num2) {
+//     function squarer(x) {
+//         return x * x;
+//     } function multiplyBy10(y) {
+//         return y * 10;
+//     }
+//     return squarer(num1) * multiplyBy10(num2);
+// }
 
-console.log(squareAndMultiply(2,4));
+// console.log(squareAndMultiply(2,4));
 
-//Format data
-function formatNames(arg1, arg2){
-    return arg1 + " " + arg2;
-}
+// //Format data
+// function formatNames(arg1, arg2){
+//     return arg1 + " " + arg2;
+// }
 
-function dataFormatter(fullName, num) {
-    const formattedData = {
-        name: fullName,
-        age: num
-    } 
-    return formattedData;
-}
+// function dataFormatter(fullName, num) {
+//     const formattedData = {
+//         name: fullName,
+//         age: num
+//     } 
+//     return formattedData;
+// }
 
-function personFormatter(firstName, lastName, age) {
-    const formattedName = formatNames(firstName, lastName);
-    const formattedData = dataFormatter(formattedName, age);
-    return formattedData;
-}
+// function personFormatter(firstName, lastName, age) {
+//     const formattedName = formatNames(firstName, lastName);
+//     const formattedData = dataFormatter(formattedName, age);
+//     return formattedData;
+// }
 
-console.log(personFormatter("Yara", "Vatansever", 24));
+// console.log(personFormatter("Yara", "Vatansever", 24));
+
+
+

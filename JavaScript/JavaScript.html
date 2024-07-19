@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>JavaScript</title>
-        <script src="JavaScript.js"></script>
     </head>
     <body>
         <h1>What Can JavaScript Do?</h1>
@@ -18,5 +17,25 @@
         
         <noscript>Sorry, your browser does not support JavaScript!</noscript>
         
+
+        <h2>JavaScript ISO Dates</h2>
+        <p>Separate date and time with a capital T.</p>
+        <p>Indicate UTC time with a capital Z.</p>
+        <p id="date"></p>
+
+        <p>Modify the time relative to UTC by adding +HH:MM or subtraction -HH:MM to the time.</p>
+        <p id="UTC"></p>
+
+        <h2>JavaScript Short Dates.</h2>
+        <p id="short"></p>
+
+        <p>Date.parse(string) returns milliseconds.</p>
+        <p>You can use the return value to convert the string to a date object:</p>
+        <p id="parse"></p>
+
+
+        
+        <script src="JavaScript.js"></script>
+        <script src="Date.js"></script>
     </body>
-        </html>
+ </html>
