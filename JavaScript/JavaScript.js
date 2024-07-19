@@ -5,7 +5,7 @@ function myFunction() {
     document.getElementById('demo').innerHTML = "My first JavaScript";
 } 
 
-console.log('Hello world!')
+console.log('Hello world!');
 
 // let person = {  //object
 //     firstName: 'Yaroslava', // String Literal
@@ -114,3 +114,33 @@ console.log('Hello world!')
 
 
 
+//Math Object
+console.log(Math.PI); //returns PI
+console.log(Math.E); //returns Euler's number
+console.log(Math.SQRT2); //returns the square root of 2
+console.log(Math.SQRT1_2); //returns the square root of 1/2
+console.log(Math.LN2); //returns the natural logarithm of 2
+console.log(Math.LN10); //returns the natural logarithm of 10
+console.log(Math.LOG2E);//returns base 2 logarithm of E
+console.log(Math.LOG10E); //returns base 10 logarithm of E
+
+
+console.log(Math.round(4.6), Math.round(4.4));
+console.log(Math.ceil(4.4));
+console.log(Math.floor(4.7));
+console.log(Math.trunc(4.9));
+console.log(Math.sign(-4), Math.sign(0), Math.sign(4));
+console.log(Math.pow(8, 2));
+console.log(Math.sqrt(64));
+console.log(Math.abs(-4.7));
+console.log(Math.min(0, 150, 30, 20, -8, -200));
+console.log(Math.max(0, 150, 30, 20, -8, -200));
+
+
+console.log(Math.random());
+console.log(Math.floor(Math.random() * 10)); //Returns a random integer from 0 to 9
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+console.log(getRndInteger(0, 10));

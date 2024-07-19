@@ -22,23 +22,23 @@ console.log(d.getTime()); // Get time (milliseconds since January 1, 1970)
 
 
 
-// //ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):
+//ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):
 
-// const z = new Date("2015-03-25T12:00:00Z");
-// //Date and time is separated with a capital T.
-// //UTC time is defined with a capital letter Z.
-// document.getElementById("date").innerHTML = z;
+const z = new Date("2015-03-25T12:00:00Z");
+//Date and time is separated with a capital T.
+//UTC time is defined with a capital letter Z.
+document.getElementById("date").innerHTML = z;
 
-// document.getElementById("UTC").innerHTML = new Date("2015-03-25T12:00:00-06:00");
-
-
-// //Short dates are written with an "MM/DD/YYYY" syntax like this:
-// document.getElementById("short").innerHTML = new Date("03/25/2015");
+document.getElementById("UTC").innerHTML = new Date("2015-03-25T12:00:00-06:00");
 
 
-// let msec = Date.parse("March 21, 2012");
-// const b = new Date(msec);
-// document.getElementById("parse").innerHTML = b;
+//Short dates are written with an "MM/DD/YYYY" syntax like this:
+document.getElementById("short").innerHTML = new Date("03/25/2015");
+
+
+let msec = Date.parse("March 21, 2012");
+const b = new Date(msec);
+document.getElementById("parse").innerHTML = b;
 
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
