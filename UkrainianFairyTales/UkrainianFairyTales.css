@@ -14,3 +14,9 @@ h1 {
 main {
     text-align: center;
 }
+footer {
+    display: flex;
+}
+footer.div {
+    width: 50%;
+}
