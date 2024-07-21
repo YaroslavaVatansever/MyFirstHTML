@@ -121,11 +121,11 @@ function IceCreamLooper(arr, type){
 //     }, 1000)
 // }
 
-// for(let i = 0; i < 10; i++){
-//     setTimeout(() =>{
-//         console.log(i);
-//     }, i * 500);
-// }
+for(let i = 0; i < 10; i++){
+    setTimeout(() =>{
+        // console.log(i);
+    }, i * 500);
+}
 
 
 const cars = ["BMW", "Volvo", "Saab", "Ford"];
@@ -133,4 +133,47 @@ let i, len, text;
 for(i = 0, len = cars.length, text = ""; i < len; i++){
     text += cars[i] + " ";
 }
-console.log(text);
+// console.log(text);
+
+
+const users = { 1: "Sally", 2: "Billy", 3: "Ashley", 4: "Timmy"};
+
+for(let prop in users){
+    if (users[prop] === "Sally"){
+        users[prop] = "Unknow"
+    }
+    // console.log(users[prop]);
+}
+
+
+const drinks = ["coffee", "sprite", "tea", "coke", "pepsi"];
+// for(let d in drinks){
+//     if(drinks[d] === "coke"){
+//         continue;
+//     }
+//     console.log(drinks[d]);
+// }
+
+for(const d of drinks){
+    if( d === "tea"){
+        continue;
+    }
+    // console.log(d);
+}
+
+
+const myString = "Hello!";
+for(const character of myString){
+    console.log(character);
+}
+
+const originalArray = [10, 15, 20, 25, 30];
+
+function numIncreaser(arr, numToIncBy){
+    for(let num of arr){
+        num += numToIncBy;
+        console.log(num);
+    }
+}
+
+numIncreaser(originalArray, 30);
